@@ -11,7 +11,7 @@ I discovered unknownsrc through an YouTube video, which exposed unknownsrc 🤔.
 - **Simplicity at its core**: Stripped down to the essentials, the website presents content clearly and concisely.
 - **Live Spotify Integration**: Using a bit of JavaScript, the site automatically updates the "Spotify Currently Playing" widget every 10 seconds, keeping content fresh and engaging.
 - **Responsive Design**: Crafted to provide a seamless experience across all devices.
-- **Interactive Llama Animation**: Fun, dynamic llamas that fall and turn on the edges of the screen, adding a playful touch to the user experience.
+- **Interactive Llama Animation**: Fun, dynamic lamas that fall and turn on the edges of the screen, adding a playful touch to the user experience.
 - **Hosted on Vercel**: The website is hosted on [Vercel](https://vercel.com/), ensuring fast and reliable performance.
 
 ## Technologies Used
