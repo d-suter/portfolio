@@ -171,7 +171,7 @@ nav a:hover {
     margin-top: 1rem;
 }
 
-#llama-container {
+#lama-container {
     position: fixed;
     top: 50px;
     left: 0;
@@ -181,7 +181,7 @@ nav a:hover {
     z-index: 10;
 }
   
-.llama {
+.lama {
     position: absolute;
     width: 50px;
     height: 50px;

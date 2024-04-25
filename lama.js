@@ -1,9 +1,9 @@
-const container = document.getElementById('llama-container');
+const container = document.getElementById('lama-container');
 
-function createLlama() {
+function createlama() {
   const img = document.createElement('img');
   img.src = 'img/icon.png';
-  img.classList.add('llama');
+  img.classList.add('lama');
 
   const exclusionZone = window.innerWidth * 0.275;
   const side = Math.round(Math.random());
@@ -26,4 +26,4 @@ function createLlama() {
   }, 7000);
 }
 
-setInterval(createLlama, 2500);
+setInterval(createlama, 2500);
