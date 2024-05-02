@@ -35,6 +35,15 @@ footer a:hover {
     text-decoration: none;
 }
 
+p a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+p a:hover {
+    color: #7928CA;
+}
+
 #github-svg svg {
     width: 95%;
     height: auto;
