@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
+    document.body.classList.add('dark-mode');
+
     setInterval(function() {
         var spotifyImage = document.getElementById('spotify-image');
         var imageUrl = spotifyImage.src.split('&time=')[0];
@@ -18,8 +20,3 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log(formatDateTime() + ' - Updated the Spotify Widget');
     }, 10000);
 });
-
-document.addEventListener('DOMContentLoaded', function() {
-    document.body.classList.add('dark-mode');
-  });
-  
