@@ -2,17 +2,17 @@
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.2); /* Dark background with slight transparency */
     border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Darker shadow for depth */
+    backdrop-filter: blur(5px);
     color: #FFF;
     font-family: 'Inter', sans-serif;
 }
 
 .contact-form h2 {
     margin-bottom: 20px;
-    color: #FFF;
+    color: #FFF; /* Ensuring the heading stands out */
 }
 
 .form-group {
@@ -22,7 +22,7 @@
 .form-group label {
     display: block;
     margin-bottom: 5px;
-    color: #FFF;
+    color: #FFF; /* Light color for labels for readability */
 }
 
 .form-group input[type="text"],
@@ -30,27 +30,27 @@
 .form-group textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #c097e9;
+    border: 1px solid #c097e9; /* A lighter purple border for visibility */
     border-radius: 5px;
-    background-color: transparent;
-    color: #FFF;
+    background-color: transparent; /* Keep input background transparent for style */
+    color: #FFF; /* White text for visibility */
 }
 
 .form-group textarea {
-    resize: vertical;
+    resize: vertical; /* Allows resizing the textarea vertically */
 }
 
 button[type="submit"] {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #c097e9;
+    background-color: #c097e9; /* Purple button */
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
 }
 
 button[type="submit"]:hover {
-    background-color: #d7b7f6;
+    background-color: #d7b7f6; /* Lighter purple on hover for a pleasant visual effect */
 }
