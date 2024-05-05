@@ -53,34 +53,42 @@ p a:hover, .github-project a:hover, .portfolio a:hover, nav a:hover {
     text-decoration: none;
 }
 
-/* GitHub Projects Section */
-.github-projects-section {
-    margin-top: 2rem;
-    color: #ffffff;
-}
-
-.github-projects-section h2, .portfolio h2 {
-    color: #fff;
-    margin-bottom: 1rem;
-}
-
-.github-project, .portfolio .project {
-    background: #161616;
+.github-project {
+    background: #1e1e1e; /* Slightly lighter than pure black for better layering */
     border-radius: 6px;
     margin-bottom: 1rem;
     padding: 1rem;
     transition: transform 0.2s ease, background-color 0.2s;
 }
 
-.github-project:hover, .github-project:focus-within,
-.portfolio .project:hover, .portfolio .project:focus-within {
+.github-project:hover,
+.github-project:focus-within {
     transform: scale(1.03);
-    background: #1c1c1c; /* Slightly lighter shade on hover */
+    background: #292929; /* A subtle hover effect */
 }
 
-.github-metadata, .project-date {
+.github-project a {
+    color: #c097e9; /* Ensuring links are visible */
+    text-decoration: none;
+}
+
+.github-project strong {
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #FFF; /* White text for headers */
+}
+
+.github-project p {
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+    color: #DDD; /* Light grey for paragraph text to reduce intensity */
+}
+
+.github-metadata {
     font-size: 0.75rem;
-    color: #bbb;
+    display: block;
+    color: #bbb; /* Subtle metadata information */
 }
 
 /* Spotify Profile Styles */
