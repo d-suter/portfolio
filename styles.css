@@ -1,3 +1,14 @@
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  .dark-mode a {
+    color: #9a9aff;
+  }
+  
+
 footer {
     position: fixed;
     bottom: 10px;
