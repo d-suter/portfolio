@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    document.body.classList.add('dark-mode');
-
     setInterval(function() {
         var spotifyImage = document.getElementById('spotify-image');
         var imageUrl = spotifyImage.src.split('&time=')[0];

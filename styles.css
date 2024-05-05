@@ -1,14 +1,10 @@
-/* Dark mode styles */
-body.dark-mode {
-    background-color: #121212;
-    color: #ffffff;
-  }
-  
-  .dark-mode a {
-    color: #9a9aff;
-  }
-  
+/* Global Dark Mode Styles */
+body {
+    background-color: #121212; /* Dark background for the whole page */
+    color: #ffffff; /* Light text for readability */
+}
 
+/* Footer Styles */
 footer {
     position: fixed;
     bottom: 10px;
@@ -18,7 +14,7 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 5px 15px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.2); /* Slightly transparent dark background */
     border-radius: 15px;
     font-size: 16px;
     color: #FFF;
@@ -26,7 +22,7 @@ footer {
     text-align: center;
     backdrop-filter: blur(5px);
 }
-  
+
 footer img {
     display: block;
     width: 25px;
@@ -46,47 +42,29 @@ footer a:hover {
     text-decoration: none;
 }
 
-p a {
-    color: #ffffff;
+/* Link Styles */
+p a, .github-project a, .portfolio a, nav a {
+    color: #9a9aff;
     text-decoration: underline;
 }
 
-p a:hover {
+p a:hover, .github-project a:hover, .portfolio a:hover, nav a:hover {
     color: #7928CA;
+    text-decoration: none;
 }
 
-#github-svg svg {
-    width: 95%;
-    height: auto;
-    display: block;
-    margin: auto;
-}
-
-.achievement-list {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    gap: 10px;
-    overflow-x: auto;
-    padding: 10px;
-}
-
-.achievement-image {
-    max-width: 100%;
-    height: auto;
-    cursor: pointer;
-}
-
+/* GitHub Projects Section */
 .github-projects-section {
     margin-top: 2rem;
     color: #ffffff;
 }
 
-.github-projects-section h2 {
+.github-projects-section h2, .portfolio h2 {
+    color: #fff;
     margin-bottom: 1rem;
 }
 
-.github-project {
+.github-project, .portfolio .project {
     background: #161616;
     border-radius: 6px;
     margin-bottom: 1rem;
@@ -94,103 +72,25 @@ p a:hover {
     transition: transform 0.2s ease, background-color 0.2s;
 }
 
-.github-project:hover,
-.github-project:focus-within {
+.github-project:hover, .github-project:focus-within,
+.portfolio .project:hover, .portfolio .project:focus-within {
     transform: scale(1.03);
-    background: #161616;
+    background: #1c1c1c; /* Slightly lighter shade on hover */
 }
 
-.github-project a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.github-project strong {
-    font-size: 1.1rem;
-    display: block;
-    margin-bottom: 0.5rem;
-}
-
-.github-project p {
-    font-size: 0.875rem;
-    margin-bottom: 0.5rem;
-}
-
-.github-metadata {
+.github-metadata, .project-date {
     font-size: 0.75rem;
-    display: block;
     color: #bbb;
 }
 
-.spotify-profile {
-    text-align: left;
-    margin-top: 2rem;
-}
-
+/* Spotify Profile Styles */
 .spotify-profile img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
 }
 
-.portfolio h2 {
-    color: #fff;
-    margin-top: 2rem;
-}
-
-.portfolio .project {
-    background: var(--nc-bg-2);
-    border-radius: 6px;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    transition: transform 0.2s ease, background-color 0.2s;
-}
-
-.portfolio .project:hover,
-.portfolio .project:focus-within {
-    transform: scale(1.03);
-    background: #161616;
-}
-
-.portfolio video {
-    width: 100%;
-    border-radius: 4px;
-    margin-top: 1rem;
-}
-
-.portfolio a {
-    color: #ffffff;
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-.portfolio a:hover {
-    text-decoration: none;
-}
-
-.project-date {
-    color: #aaa;
-    font-style: italic;
-    display: block;
-}
-
-nav a {
-    color: #ffffff;
-    text-decoration: underline;
-}
-
-nav a:hover {
-    color: #c097e9;
-    text-decoration: none;
-}
-
-.project img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-top: 1rem;
-}
-
+/* Lama Animation Styles */
 #lama-container {
     position: fixed;
     top: 50px;
@@ -207,7 +107,7 @@ nav a:hover {
     height: 50px;
     animation: fallturn 7s linear forwards;
 }
-  
+
 @keyframes fallturn-clockwise {
     0% { transform: translateY(0) rotate(0deg); }
     100% { transform: translateY(calc(100vh - 50px)) rotate(360deg); }
@@ -217,4 +117,3 @@ nav a:hover {
     0% { transform: translateY(0) rotate(0deg); }
     100% { transform: translateY(calc(100vh - 50px)) rotate(-360deg); }
 }
-  
